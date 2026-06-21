@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow";
+    
+}
+
+.left {
+    background-image: url(./css-task/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+}
+
+.right {
+    width: 50%;
+}
+
+.left img {
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.main-top-text {
+    font-size: 25px;
+    margin-top: 90px;
+    margin-left: 60px;
+    padding: 0;
+}
+
+.under-top-text {
+    font-size: 15px;
+    color: gray;
+    margin-left: 60px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.img-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-box img {
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 300px;
+}
+
+.divider {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: gray;
+    flex-direction: row;
+}
+
+.email-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid lightgray;
+    margin-left: 60px;
+    color: gray;
+}
+
+.email-box input {
+    border: none;
+    width: 250px;
+}
+
+.phone-box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid lightgray;
+    margin-right: 60px;
+    color: gray;
+
+}
+
+.phone-box input {
+    border: none;
+    width: 250px;
+}
+
+.user-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-text {
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.under-middle-text {
+    font-size: 15px;
+    color: gray;
+    margin-left: 60px;
+    margin-top: 15px;
+    padding-top: 0;
+}
+
+.rad-btn {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
