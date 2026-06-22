@@ -105,6 +105,7 @@ body {
     display: flex;
     justify-content: center ;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .login .email-box:hover {
@@ -114,6 +115,11 @@ body {
 .login .phone-box:hover {
     border-left: 2px solid blue;
 }
+
+.middle-text {
+    flex-basis: 100%;
+}
+
 
 
 
