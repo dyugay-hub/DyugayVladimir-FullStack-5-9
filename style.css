@@ -7,6 +7,12 @@ body {
     
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
 
 .left {
     background-image: url(./img/bg.jpg);
@@ -120,7 +126,8 @@ body {
 .email-box {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    flex-shrink: 1;
+    width: 50%;
     border: 1px solid #EEEEEE;
     margin-left: 60px;
     color: gray;
@@ -128,13 +135,14 @@ body {
 
 .email-box input {
     border: none;
-    width: 300px;
+    width: 50%;
 }   
 
 .phone-box {
     display: flex;
+    flex-shrink: 1;
     flex-direction: column;
-    width: 350px;
+    width: 50%;
     border: 1px solid #EEEEEE;
     margin-right: 60px;
     color: gray;
@@ -143,7 +151,7 @@ body {
 
 .phone-box input {
     border: none;
-    width: 300px;
+    width: 50%;
 }
 
 .login {
@@ -251,6 +259,40 @@ label[for="phone"] {
     padding-top: 3px;
     padding-left: 3px;
 }
+
+.title2 {
+    display: none;
+    position: absolute;
+    width: max-content;
+    background-color: lightgray;
+    border-radius: 30px;
+    padding: 3px;
+}
+
+input[value="individual"]:checked ~ .title2{
+    display: block;
+    
+
+}
+
+input[value="business"]:checked ~ .title2{
+    display: block;
+    
+
+}
+
+input[value="ira"]:checked ~ .title2{
+    display: block;
+    
+
+}
+
+input[value="trust"]:checked ~ .title2{
+    display: block;
+    
+
+}
+
 
 
 /* .img-box {
