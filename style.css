@@ -13,6 +13,17 @@ body {
     border: 0;
 }
 
+.page {
+    display: flex;
+    background-color: white;
+    height: calc(100vh - 80px);
+}
+
+.main-page {
+    padding: 40px;
+    background-color:lightgray;
+    height: 100vh;
+}
 
 .left {
     background-image: url(./img/bg.jpg);
@@ -20,8 +31,8 @@ body {
     background-size: cover;
     background-position: center;
     width: 50%;
-    height: 100vh;
     margin: 0;
+    height: 100%;
 }
 
 .right {
@@ -36,8 +47,8 @@ body {
 }
 
 .main-top-text {
-    color: #7B8A92;
-    font-size: 35px;
+    color: #3e3e3e;
+    font-size: 25px;
     margin-top: 90px;
     margin-left: 60px;
     margin-bottom: 10px;
@@ -46,7 +57,7 @@ body {
 }
 
 .under-top-text {
-    font-size: 25px;
+    font-size: 15px;
     color: #96A5B1;
     margin-left: 60px;
     margin-top: 0;
@@ -55,6 +66,7 @@ body {
 }
 
 .img-box {
+    margin-top: 50px;
     align-items: center;
     margin-left: 60px;
     margin-right: 60px;
@@ -128,6 +140,7 @@ body {
     flex-direction: column;
     flex-shrink: 1;
     width: 50%;
+    height: 40px;
     border: 1px solid #EEEEEE;
     margin-left: 60px;
     color: gray;
@@ -135,7 +148,7 @@ body {
 
 .email-box input {
     border: none;
-    width: 50%;
+    width: 90%;
 }   
 
 .phone-box {
@@ -143,6 +156,7 @@ body {
     flex-shrink: 1;
     flex-direction: column;
     width: 50%;
+    height: 40px;
     border: 1px solid #EEEEEE;
     margin-right: 60px;
     color: gray;
@@ -151,7 +165,7 @@ body {
 
 .phone-box input {
     border: none;
-    width: 50%;
+    width: 90%;
 }
 
 .login {
@@ -172,7 +186,7 @@ body {
 }
 
 .middle-text {
-    color: #7B8A92;
+    color: #3e3e3e;
     font-size: 25px;
     padding-top: 20px;
     flex-basis: 100%;
@@ -226,10 +240,12 @@ body {
 
 .email-box input {
     color: #AFAFAF;
+    margin-left: 5px;
 }
 
 .phone-box input {
     color: #AFAFAF;
+    margin-left: 5px;
 }
 
 .rad-btn label[title="radio1"],label[title="radio2"],label[title="radio3"],label[title="radio4"] {
@@ -264,9 +280,11 @@ label[for="phone"] {
     display: none;
     position: absolute;
     width: max-content;
-    background-color: lightgray;
-    border-radius: 30px;
+    background-color: white;
+    border-radius: 5px;
     padding: 3px;
+    border: 1px solid gray;
+    color: lightgray;
 }
 
 input[value="individual"]:checked ~ .title2{
@@ -293,7 +311,13 @@ input[value="trust"]:checked ~ .title2{
 
 }
 
+.main-page:has(#email:focus) .email-box {
+    border-left: 2px solid blue;
+}
 
+.main-page:has(#phone:focus) .phone-box {
+    border-left: 2px solid blue;
+}
 
 /* .img-box {
     width: 735px;
